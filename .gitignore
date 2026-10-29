@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Experiment outputs / large artifacts
+results/
+outputs/
+logs/
+wandb/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+
+# External code / data pulled locally
+third_party/
+data/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Assistant tooling
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.cursor/
+.cursorrules
+.aider*
+.copilot/
+AGENTS.md
