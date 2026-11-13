@@ -1,0 +1,33 @@
+==========================================
+Medusa Evaluation on MMSpec (testmini)
+==========================================
+Base Model: Qwen/Qwen2.5-VL-7B-Instruct
+Spec Model: ping69852/Medusa-Qwen2.5-VL-7B-Instruct
+Data Folder: dataset/MMSpec/testmini
+Medusa params: depth=3, top_k=8, total_token=30
+Max New Tokens: 1024
+Output: results/Qwen2.5-VL-7B/mmspec_testmini/medusa-temperature-0.jsonl
+
+Output to results/Qwen2.5-VL-7B/mmspec_testmini/medusa-temperature-0.jsonl
+Method: Medusa (Speculative Decoding)
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.55s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:17<00:22,  7.52s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:33<00:22, 11.14s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:42<00:10, 10.39s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:46<00:00,  8.22s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:46<00:00,  9.36s/it]
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/st3803/MMSpec/evaluation/eval_medusa_mmspec.py", line 247, in <module>
+    main()
+  File "/home/st3803/MMSpec/evaluation/eval_medusa_mmspec.py", line 243, in main
+    evaluate(args)
+  File "/home/st3803/MMSpec/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/st3803/MMSpec/evaluation/eval_medusa_mmspec.py", line 38, in evaluate
+    model = SpecModel.from_pretrained(
+  File "/home/st3803/MMSpec/method/medusa/spec_model_medusa.py", line 265, in from_pretrained
+    raise FileNotFoundError(
+FileNotFoundError: Cannot find weight file for medusa checkpoint in ping69852/Medusa-Qwen2.5-VL-7B-Instruct
+
+real	0m55.085s
+user	0m10.507s
+sys	0m5.920s

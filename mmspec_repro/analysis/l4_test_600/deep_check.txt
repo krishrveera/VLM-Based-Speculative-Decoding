@@ -1,0 +1,63 @@
+== exact-match matrix (% of 600) ==
+        greedy    pen     e1     e2     e3   visp    msd    med    pld   look   recy    sam
+ greedy    100      8     32     34     37     28      1     26     10     37      3      5
+    pen      8    100      7      7      8      6      0      5      5      8      2      3
+     e1     32      7    100     43     40     38      0     38      8     38      2      4
+     e2     34      7     43    100     38     35      1     34      8     38      2      4
+     e3     37      8     40     38    100     35      1     33     10     40      3      5
+   visp     28      6     38     35     35    100      1     35      6     32      1      4
+    msd      1      0      0      1      1      1    100      0      2      1      1      1
+    med     26      5     38     34     33     35      0    100      6     30      1      3
+    pld     10      5      8      8     10      6      2      6    100     11      9      3
+   look     37      8     38     38     40     32      1     30     11    100      3      5
+   recy      3      2      2      2      3      1      1      1      9      3    100      1
+    sam      5      3      4      4      5      4      1      3      3      5      1    100
+
+== vs baseline_greedy: relation of each method's answer ==
+baseline   {'diverge': 547, 'same': 48, 'b_prefix_of_a': 5}  diverge at median 9% of answer
+eagle      {'same': 195, 'b_prefix_of_a': 27, 'diverge': 376, 'a_prefix_of_b': 2}  diverge at median 21% of answer
+eagle2     {'same': 204, 'b_prefix_of_a': 23, 'diverge': 372, 'a_prefix_of_b': 1}  diverge at median 21% of answer
+eagle3     {'same': 223, 'diverge': 371, 'a_prefix_of_b': 4, 'b_prefix_of_a': 2}  diverge at median 21% of answer
+vispec     {'b_prefix_of_a': 56, 'same': 171, 'diverge': 372, 'a_prefix_of_b': 1}  diverge at median 21% of answer
+msd_e2e    {'diverge': 587, 'same': 7, 'a_prefix_of_b': 6}  diverge at median 4% of answer
+medusa     {'b_prefix_of_a': 70, 'same': 153, 'diverge': 375, 'a_prefix_of_b': 2}  diverge at median 19% of answer
+pld        {'same': 63, 'diverge': 532, 'a_prefix_of_b': 2, 'b_prefix_of_a': 3}  diverge at median 9% of answer
+lookahead  {'same': 222, 'diverge': 375, 'a_prefix_of_b': 2, 'b_prefix_of_a': 1}  diverge at median 21% of answer
+recycling  {'diverge': 577, 'same': 20, 'b_prefix_of_a': 1, 'a_prefix_of_b': 2}  diverge at median 7% of answer
+sam        {'same': 30, 'diverge': 553, 'a_prefix_of_b': 15, 'b_prefix_of_a': 2}  diverge at median 7% of answer
+
+== msd_e2e: where it is shorter than baseline_greedy ==
+234 samples with <80% of greedy's tokens; by task: {'general vqa': 47, 'text vqa': 38, 'image captioning': 22, 'chart understanding': 27, 'complex reasoning pro': 41, 'multi-turn conversation': 59}
+relation for those: {'diverge': 229, 'a_prefix_of_b': 5}
+  mmspec_005 general vqa        msd_e2e=  15 greedy=  24 diverge
+  mmspec_006 general vqa        msd_e2e=   7 greedy=  10 diverge
+  mmspec_009 general vqa        msd_e2e=  16 greedy=  47 diverge
+  mmspec_012 general vqa        msd_e2e=  18 greedy=  38 diverge
+  mmspec_013 general vqa        msd_e2e=   9 greedy=  16 diverge
+  mmspec_014 general vqa        msd_e2e=  19 greedy=  40 diverge
+last char of the shorter answers: {'.': 161, '"': 17, 'n': 10, 'e': 8, '*': 7, 'd': 5, ')': 3, "'": 3}
+
+== sam: where it is shorter than baseline_greedy ==
+316 samples with <80% of greedy's tokens; by task: {'general vqa': 46, 'text vqa': 34, 'image captioning': 56, 'chart understanding': 38, 'complex reasoning pro': 70, 'multi-turn conversation': 72}
+relation for those: {'diverge': 303, 'a_prefix_of_b': 13}
+  mmspec_009 general vqa        sam=  21 greedy=  47 diverge
+  mmspec_011 general vqa        sam=  37 greedy= 105 diverge
+  mmspec_012 general vqa        sam=  13 greedy=  38 a_prefix_of_b
+  mmspec_014 general vqa        sam=  21 greedy=  40 diverge
+  mmspec_016 general vqa        sam=  13 greedy=  20 diverge
+  mmspec_020 general vqa        sam=  26 greedy=  43 diverge
+last char of the shorter answers: {'.': 142, 'n': 75, 'e': 15, '"': 11, 'd': 8, '7': 5, '`': 5, '*': 5}
+
+== max new tokens per method (cap check) ==
+baseline_greedy  max  1024  turns>=1000:  15  mean  193.9
+baseline         max  1024  turns>=1000:  12  mean  194.6
+eagle            max  1024  turns>=1000:   7  mean  192.3
+eagle2           max  1024  turns>=1000:  11  mean  193.1
+eagle3           max  1024  turns>=1000:  11  mean  192.9
+vispec           max  1024  turns>=1000:  14  mean  196.1
+msd_e2e          max  1030  turns>=1000:  15  mean  168.9
+medusa           max  1024  turns>=1000:  11  mean  194.8
+pld              max  1024  turns>=1000:  14  mean  198.6
+lookahead        max  1024  turns>=1000:  17  mean  194.4
+recycling        max  1024  turns>=1000:  25  mean  196.0
+sam              max  1026  turns>=1000:   4  mean   93.1

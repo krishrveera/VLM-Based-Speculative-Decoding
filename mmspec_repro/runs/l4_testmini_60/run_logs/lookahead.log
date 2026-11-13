@@ -1,0 +1,28 @@
+==========================================
+Lookahead Evaluation on MMSpec (testmini)
+==========================================
+Base Model: Qwen/Qwen2.5-VL-7B-Instruct
+Data Folder: dataset/MMSpec/testmini
+Lookahead params: decoding_length=64, branch_length=12
+Max New Tokens: 1024
+Output: results/Qwen2.5-VL-7B/mmspec_testmini/lookahead-temperature-0.jsonl
+
+Output to results/Qwen2.5-VL-7B/mmspec_testmini/lookahead-temperature-0.jsonl
+Method: Lookahead
+Lookahead params: decoding_length=64, branch_length=12
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:20<01:21, 20.48s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:32<00:46, 15.65s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:49<00:32, 16.02s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.70s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.08s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.01s/it]
+Check model training state: False
+CUDA VISIBLE DEVICES: 0
+Loaded 60 samples
+Warming up...
+Warmup done
+Skipping 0 already-evaluated samples
+Evaluating (bs=1):   0%|          | 0/60 [00:00<?, ?it/s]Evaluating (bs=1):   2%|▏         | 1/60 [00:03<03:02,  3.10s/it]Evaluating (bs=1):   3%|▎         | 2/60 [00:09<05:03,  5.23s/it]Evaluating (bs=1):   5%|▌         | 3/60 [00:19<06:44,  7.10s/it]Evaluating (bs=1):   7%|▋         | 4/60 [00:25<06:30,  6.97s/it]Evaluating (bs=1):   8%|▊         | 5/60 [00:30<05:26,  5.93s/it]Evaluating (bs=1):  10%|█         | 6/60 [00:36<05:38,  6.26s/it]Evaluating (bs=1):  12%|█▏        | 7/60 [00:43<05:43,  6.49s/it]Evaluating (bs=1):  13%|█▎        | 8/60 [00:48<05:12,  6.00s/it]Evaluating (bs=1):  15%|█▌        | 9/60 [00:55<05:20,  6.29s/it]Evaluating (bs=1):  17%|█▋        | 10/60 [01:01<05:06,  6.12s/it]Evaluating (bs=1):  18%|█▊        | 11/60 [01:10<05:46,  7.07s/it]Evaluating (bs=1):  20%|██        | 12/60 [01:19<06:01,  7.53s/it]Evaluating (bs=1):  22%|██▏       | 13/60 [01:40<09:04, 11.58s/it]Evaluating (bs=1):  23%|██▎       | 14/60 [02:22<15:53, 20.72s/it]Evaluating (bs=1):  25%|██▌       | 15/60 [02:29<12:37, 16.84s/it]Evaluating (bs=1):  27%|██▋       | 16/60 [02:48<12:41, 17.32s/it]Evaluating (bs=1):  28%|██▊       | 17/60 [03:30<17:49, 24.86s/it]Evaluating (bs=1):  30%|███       | 18/60 [03:40<14:12, 20.29s/it]Evaluating (bs=1):  32%|███▏      | 19/60 [03:44<10:39, 15.59s/it]Evaluating (bs=1):  33%|███▎      | 20/60 [03:51<08:34, 12.85s/it]Evaluating (bs=1):  35%|███▌      | 21/60 [03:53<06:16,  9.65s/it]Evaluating (bs=1):  37%|███▋      | 22/60 [03:56<04:50,  7.64s/it]Evaluating (bs=1):  38%|███▊      | 23/60 [04:02<04:23,  7.13s/it]Evaluating (bs=1):  40%|████      | 24/60 [04:06<03:43,  6.20s/it]Evaluating (bs=1):  42%|████▏     | 25/60 [04:09<03:05,  5.31s/it]Evaluating (bs=1):  43%|████▎     | 26/60 [04:12<02:34,  4.55s/it]Evaluating (bs=1):  45%|████▌     | 27/60 [04:16<02:26,  4.43s/it]Evaluating (bs=1):  47%|████▋     | 28/60 [04:21<02:25,  4.55s/it]Evaluating (bs=1):  48%|████▊     | 29/60 [04:24<02:07,  4.11s/it]Evaluating (bs=1):  50%|█████     | 30/60 [04:28<01:58,  3.96s/it]Evaluating (bs=1):  52%|█████▏    | 31/60 [04:38<02:45,  5.71s/it]Evaluating (bs=1):  53%|█████▎    | 32/60 [04:50<03:34,  7.66s/it]Evaluating (bs=1):  55%|█████▌    | 33/60 [04:59<03:40,  8.17s/it]Evaluating (bs=1):  57%|█████▋    | 34/60 [05:11<04:00,  9.25s/it]Evaluating (bs=1):  58%|█████▊    | 35/60 [05:28<04:47, 11.51s/it]Evaluating (bs=1):  60%|██████    | 36/60 [05:40<04:39, 11.63s/it]Evaluating (bs=1):  62%|██████▏   | 37/60 [05:51<04:24, 11.51s/it]Evaluating (bs=1):  63%|██████▎   | 38/60 [06:05<04:28, 12.22s/it]Evaluating (bs=1):  65%|██████▌   | 39/60 [06:15<04:07, 11.77s/it]Evaluating (bs=1):  67%|██████▋   | 40/60 [06:28<03:57, 11.88s/it]Evaluating (bs=1):  68%|██████▊   | 41/60 [07:35<09:03, 28.63s/it]Evaluating (bs=1):  70%|███████   | 42/60 [08:50<12:44, 42.47s/it]Evaluating (bs=1):  72%|███████▏  | 43/60 [09:56<14:01, 49.52s/it]Evaluating (bs=1):  73%|███████▎  | 44/60 [10:54<13:52, 52.03s/it]Evaluating (bs=1):  75%|███████▌  | 45/60 [12:16<15:17, 61.14s/it]Evaluating (bs=1):  77%|███████▋  | 46/60 [12:32<11:06, 47.64s/it]Evaluating (bs=1):  78%|███████▊  | 47/60 [12:53<08:34, 39.60s/it]Evaluating (bs=1):  80%|████████  | 48/60 [13:10<06:32, 32.74s/it]Evaluating (bs=1):  82%|████████▏ | 49/60 [13:55<06:39, 36.27s/it]Evaluating (bs=1):  83%|████████▎ | 50/60 [14:14<05:11, 31.15s/it]Evaluating (bs=1):  85%|████████▌ | 51/60 [14:20<03:34, 23.82s/it]Evaluating (bs=1):  87%|████████▋ | 52/60 [14:28<02:32, 19.06s/it]Evaluating (bs=1):  88%|████████▊ | 53/60 [14:34<01:45, 15.07s/it]Evaluating (bs=1):  90%|█████████ | 54/60 [14:42<01:17, 12.95s/it]Evaluating (bs=1):  92%|█████████▏| 55/60 [14:47<00:52, 10.43s/it]Evaluating (bs=1):  93%|█████████▎| 56/60 [14:54<00:37,  9.50s/it]Evaluating (bs=1):  95%|█████████▌| 57/60 [15:04<00:29,  9.75s/it]Evaluating (bs=1):  97%|█████████▋| 58/60 [15:13<00:18,  9.38s/it]Evaluating (bs=1):  98%|█████████▊| 59/60 [15:23<00:09,  9.48s/it]Evaluating (bs=1): 100%|██████████| 60/60 [15:27<00:00,  8.11s/it]Evaluating (bs=1): 100%|██████████| 60/60 [15:27<00:00, 15.47s/it]
+Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/lookahead-temperature-0.jsonl
+
+Lookahead evaluation complete!
+Results saved to: results/Qwen2.5-VL-7B/mmspec_testmini/lookahead-temperature-0.jsonl
+
+real	17m2.987s
+user	15m23.931s
+sys	0m9.898s

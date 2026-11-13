@@ -1,0 +1,30 @@
+==========================================
+ViSpec Evaluation on MMSpec (testmini)
+==========================================
+Base Model: Qwen/Qwen2.5-VL-7B-Instruct
+Spec Model: Cloudriver/ViSpec-Qwen2.5-VL-7B-Instruct
+Data Folder: dataset/MMSpec/testmini
+ViSpec params: depth=3, top_k=8, total_token=30, num_q=2
+Max New Tokens: 1024
+Output: results/Qwen2.5-VL-7B/mmspec_testmini/vispec-temperature-0.jsonl
+
+Output to results/Qwen2.5-VL-7B/mmspec_testmini/vispec-temperature-0.jsonl
+Method: ViSpec (attn_implementation=None)
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:00, 15.08s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:27<00:41, 13.75s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:48<00:33, 16.75s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:57<00:13, 13.93s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:03<00:00, 10.95s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:03<00:00, 12.70s/it]
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+You are using a model of type qwen2_5_vl to instantiate a model of type llama. This is not supported for all configurations of models and can yield errors.
+Check model training state: False
+CUDA VISIBLE DEVICES: 0
+Loaded 60 samples
+Warming up...
+Warmup done
+Skipping 0 already-evaluated samples
+Evaluating (bs=1):   0%|          | 0/60 [00:00<?, ?it/s]Evaluating (bs=1):   2%|▏         | 1/60 [00:03<03:19,  3.39s/it]Evaluating (bs=1):   3%|▎         | 2/60 [00:09<04:41,  4.86s/it]Evaluating (bs=1):   5%|▌         | 3/60 [00:16<05:29,  5.78s/it]Evaluating (bs=1):   7%|▋         | 4/60 [00:21<05:22,  5.76s/it]Evaluating (bs=1):   8%|▊         | 5/60 [00:25<04:39,  5.08s/it]Evaluating (bs=1):  10%|█         | 6/60 [00:32<05:04,  5.64s/it]Evaluating (bs=1):  12%|█▏        | 7/60 [00:37<04:50,  5.48s/it]Evaluating (bs=1):  13%|█▎        | 8/60 [00:41<04:24,  5.08s/it]Evaluating (bs=1):  15%|█▌        | 9/60 [00:47<04:27,  5.25s/it]Evaluating (bs=1):  17%|█▋        | 10/60 [00:51<04:06,  4.92s/it]Evaluating (bs=1):  18%|█▊        | 11/60 [00:58<04:31,  5.53s/it]Evaluating (bs=1):  20%|██        | 12/60 [01:05<04:40,  5.84s/it]Evaluating (bs=1):  22%|██▏       | 13/60 [01:27<08:27, 10.79s/it]Evaluating (bs=1):  23%|██▎       | 14/60 [02:00<13:30, 17.61s/it]Evaluating (bs=1):  25%|██▌       | 15/60 [02:06<10:36, 14.14s/it]Evaluating (bs=1):  27%|██▋       | 16/60 [02:20<10:15, 13.99s/it]Evaluating (bs=1):  28%|██▊       | 17/60 [02:58<15:10, 21.18s/it]Evaluating (bs=1):  30%|███       | 18/60 [03:05<11:52, 16.97s/it]Evaluating (bs=1):  32%|███▏      | 19/60 [03:09<08:56, 13.08s/it]Evaluating (bs=1):  33%|███▎      | 20/60 [03:14<07:00, 10.51s/it]Evaluating (bs=1):  35%|███▌      | 21/60 [03:16<05:10,  7.97s/it]Evaluating (bs=1):  37%|███▋      | 22/60 [03:18<04:04,  6.44s/it]Evaluating (bs=1):  38%|███▊      | 23/60 [03:23<03:32,  5.73s/it]Evaluating (bs=1):  40%|████      | 24/60 [03:26<03:01,  5.05s/it]Evaluating (bs=1):  42%|████▏     | 25/60 [03:29<02:33,  4.38s/it]Evaluating (bs=1):  43%|████▎     | 26/60 [03:31<02:08,  3.79s/it]Evaluating (bs=1):  45%|████▌     | 27/60 [03:34<01:55,  3.51s/it]Evaluating (bs=1):  47%|████▋     | 28/60 [03:38<01:53,  3.54s/it]Evaluating (bs=1):  48%|████▊     | 29/60 [03:40<01:42,  3.30s/it]Evaluating (bs=1):  50%|█████     | 30/60 [03:43<01:35,  3.19s/it]Evaluating (bs=1):  52%|█████▏    | 31/60 [03:49<01:53,  3.93s/it]Evaluating (bs=1):  53%|█████▎    | 32/60 [03:57<02:26,  5.25s/it]Evaluating (bs=1):  55%|█████▌    | 33/60 [04:03<02:21,  5.23s/it]Evaluating (bs=1):  57%|█████▋    | 34/60 [04:11<02:43,  6.28s/it]Evaluating (bs=1):  58%|█████▊    | 35/60 [04:21<03:00,  7.23s/it]Evaluating (bs=1):  60%|██████    | 36/60 [04:28<02:56,  7.36s/it]Evaluating (bs=1):  62%|██████▏   | 37/60 [04:35<02:41,  7.04s/it]Evaluating (bs=1):  63%|██████▎   | 38/60 [04:42<02:36,  7.10s/it]Evaluating (bs=1):  65%|██████▌   | 39/60 [04:49<02:32,  7.24s/it]Evaluating (bs=1):  67%|██████▋   | 40/60 [04:57<02:27,  7.38s/it]Evaluating (bs=1):  68%|██████▊   | 41/60 [05:49<06:36, 20.85s/it]Evaluating (bs=1):  70%|███████   | 42/60 [06:34<08:26, 28.11s/it]Evaluating (bs=1):  72%|███████▏  | 43/60 [07:05<08:08, 28.74s/it]Evaluating (bs=1):  73%|███████▎  | 44/60 [07:46<08:39, 32.45s/it]Evaluating (bs=1):  75%|███████▌  | 45/60 [08:34<09:17, 37.20s/it]Evaluating (bs=1):  77%|███████▋  | 46/60 [08:47<06:57, 29.82s/it]Evaluating (bs=1):  78%|███████▊  | 47/60 [09:00<05:22, 24.84s/it]Evaluating (bs=1):  80%|████████  | 48/60 [09:12<04:13, 21.12s/it]Evaluating (bs=1):  82%|████████▏ | 49/60 [09:40<04:14, 23.17s/it]Evaluating (bs=1):  83%|████████▎ | 50/60 [09:52<03:17, 19.77s/it]Evaluating (bs=1):  85%|████████▌ | 51/60 [09:57<02:17, 15.32s/it]Evaluating (bs=1):  87%|████████▋ | 52/60 [10:03<01:39, 12.46s/it]Evaluating (bs=1):  88%|████████▊ | 53/60 [10:08<01:11, 10.23s/it]Evaluating (bs=1):  90%|█████████ | 54/60 [10:14<00:53,  9.00s/it]Evaluating (bs=1):  92%|█████████▏| 55/60 [10:22<00:42,  8.56s/it]Evaluating (bs=1):  93%|█████████▎| 56/60 [10:28<00:31,  7.90s/it]Evaluating (bs=1):  95%|█████████▌| 57/60 [10:35<00:23,  7.79s/it]Evaluating (bs=1):  97%|█████████▋| 58/60 [10:42<00:14,  7.33s/it]Evaluating (bs=1):  98%|█████████▊| 59/60 [10:49<00:07,  7.18s/it]Evaluating (bs=1): 100%|██████████| 60/60 [10:53<00:00,  6.31s/it]Evaluating (bs=1): 100%|██████████| 60/60 [10:53<00:00, 10.89s/it]
+Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/vispec-temperature-0.jsonl
+
+ViSpec evaluation complete!
+Results saved to: results/Qwen2.5-VL-7B/mmspec_testmini/vispec-temperature-0.jsonl
+
+real	13m5.962s
+user	11m1.724s
+sys	0m20.926s

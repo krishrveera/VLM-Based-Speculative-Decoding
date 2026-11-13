@@ -1,0 +1,30 @@
+==========================================
+EAGLE3 Evaluation on MMSpec (testmini)
+==========================================
+Base Model: Qwen/Qwen2.5-VL-7B-Instruct
+Spec Model: Cloudriver/EAGLE3-Qwen2.5-VL-7B-Instruct
+Data Folder: dataset/MMSpec/testmini
+EAGLE params: depth=3, top_k=8, total_token=30
+Max New Tokens: 1024
+Output: results/Qwen2.5-VL-7B/mmspec_testmini/eagle3-temperature-0.jsonl
+
+Output to results/Qwen2.5-VL-7B/mmspec_testmini/eagle3-temperature-0.jsonl
+Method: EAGLE3 (Speculative Decoding)
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:20<01:21, 20.49s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:40<01:01, 20.34s/it]Loading checkpoint shards:  60%|██████    | 3/5 [01:00<00:40, 20.30s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:13<00:17, 17.40s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:19<00:00, 13.15s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:19<00:00, 15.91s/it]
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+You are using a model of type qwen2_vl to instantiate a model of type llama. This is not supported for all configurations of models and can yield errors.
+Check model training state: False
+CUDA VISIBLE DEVICES: 0
+Loaded 60 samples
+Warming up...
+Warmup done
+Skipping 0 already-evaluated samples
+Evaluating (bs=1):   0%|          | 0/60 [00:00<?, ?it/s]Evaluating (bs=1):   2%|▏         | 1/60 [00:04<04:06,  4.18s/it]Evaluating (bs=1):   3%|▎         | 2/60 [00:13<06:59,  7.23s/it]Evaluating (bs=1):   5%|▌         | 3/60 [00:26<09:13,  9.71s/it]Evaluating (bs=1):   7%|▋         | 4/60 [00:37<09:36, 10.30s/it]Evaluating (bs=1):   8%|▊         | 5/60 [00:43<08:02,  8.78s/it]Evaluating (bs=1):  10%|█         | 6/60 [00:54<08:38,  9.60s/it]Evaluating (bs=1):  12%|█▏        | 7/60 [01:05<08:42,  9.86s/it]Evaluating (bs=1):  13%|█▎        | 8/60 [01:11<07:35,  8.75s/it]Evaluating (bs=1):  15%|█▌        | 9/60 [01:20<07:31,  8.84s/it]Evaluating (bs=1):  17%|█▋        | 10/60 [01:29<07:25,  8.90s/it]Evaluating (bs=1):  18%|█▊        | 11/60 [01:40<07:47,  9.54s/it]Evaluating (bs=1):  20%|██        | 12/60 [01:52<08:10, 10.22s/it]Evaluating (bs=1):  22%|██▏       | 13/60 [02:33<15:27, 19.73s/it]Evaluating (bs=1):  23%|██▎       | 14/60 [04:04<31:31, 41.13s/it]Evaluating (bs=1):  25%|██▌       | 15/60 [04:15<23:56, 31.92s/it]Evaluating (bs=1):  27%|██▋       | 16/60 [04:24<18:30, 25.24s/it]Evaluating (bs=1):  28%|██▊       | 17/60 [05:36<28:12, 39.36s/it]Evaluating (bs=1):  30%|███       | 18/60 [05:50<22:09, 31.65s/it]Evaluating (bs=1):  32%|███▏      | 19/60 [05:57<16:28, 24.11s/it]Evaluating (bs=1):  33%|███▎      | 20/60 [06:06<13:05, 19.65s/it]Evaluating (bs=1):  35%|███▌      | 21/60 [06:09<09:25, 14.51s/it]Evaluating (bs=1):  37%|███▋      | 22/60 [06:13<07:11, 11.35s/it]Evaluating (bs=1):  38%|███▊      | 23/60 [06:20<06:20, 10.27s/it]Evaluating (bs=1):  40%|████      | 24/60 [06:27<05:34,  9.29s/it]Evaluating (bs=1):  42%|████▏     | 25/60 [06:32<04:37,  7.92s/it]Evaluating (bs=1):  43%|████▎     | 26/60 [06:35<03:40,  6.49s/it]Evaluating (bs=1):  45%|████▌     | 27/60 [06:40<03:18,  6.03s/it]Evaluating (bs=1):  47%|████▋     | 28/60 [06:47<03:17,  6.17s/it]Evaluating (bs=1):  48%|████▊     | 29/60 [06:51<02:52,  5.57s/it]Evaluating (bs=1):  50%|█████     | 30/60 [06:56<02:41,  5.37s/it]Evaluating (bs=1):  52%|█████▏    | 31/60 [07:12<04:11,  8.67s/it]Evaluating (bs=1):  53%|█████▎    | 32/60 [07:33<05:44, 12.32s/it]Evaluating (bs=1):  55%|█████▌    | 33/60 [07:48<05:57, 13.22s/it]Evaluating (bs=1):  57%|█████▋    | 34/60 [08:08<06:37, 15.28s/it]Evaluating (bs=1):  58%|█████▊    | 35/60 [08:31<07:19, 17.58s/it]Evaluating (bs=1):  60%|██████    | 36/60 [08:50<07:13, 18.04s/it]Evaluating (bs=1):  62%|██████▏   | 37/60 [09:05<06:32, 17.07s/it]Evaluating (bs=1):  63%|██████▎   | 38/60 [09:22<06:13, 16.99s/it]Evaluating (bs=1):  65%|██████▌   | 39/60 [09:36<05:40, 16.23s/it]Evaluating (bs=1):  67%|██████▋   | 40/60 [09:54<05:31, 16.58s/it]Evaluating (bs=1):  68%|██████▊   | 41/60 [11:37<13:28, 42.55s/it]Evaluating (bs=1):  70%|███████   | 42/60 [13:07<17:05, 56.95s/it]Evaluating (bs=1):  72%|███████▏  | 43/60 [14:08<16:28, 58.13s/it]Evaluating (bs=1):  73%|███████▎  | 44/60 [15:46<18:41, 70.10s/it]Evaluating (bs=1):  75%|███████▌  | 45/60 [17:46<21:12, 84.86s/it]Evaluating (bs=1):  77%|███████▋  | 46/60 [18:08<15:27, 66.23s/it]Evaluating (bs=1):  78%|███████▊  | 47/60 [18:41<12:09, 56.15s/it]Evaluating (bs=1):  80%|████████  | 48/60 [19:03<09:09, 45.75s/it]Evaluating (bs=1):  82%|████████▏ | 49/60 [20:20<10:06, 55.13s/it]Evaluating (bs=1):  83%|████████▎ | 50/60 [20:50<07:56, 47.68s/it]Evaluating (bs=1):  85%|████████▌ | 51/60 [20:58<05:21, 35.67s/it]Evaluating (bs=1):  87%|████████▋ | 52/60 [21:07<03:42, 27.81s/it]Evaluating (bs=1):  88%|████████▊ | 53/60 [21:13<02:29, 21.33s/it]Evaluating (bs=1):  90%|█████████ | 54/60 [21:22<01:46, 17.71s/it]Evaluating (bs=1):  92%|█████████▏| 55/60 [21:35<01:21, 16.22s/it]Evaluating (bs=1):  93%|█████████▎| 56/60 [21:43<00:54, 13.65s/it]Evaluating (bs=1):  95%|█████████▌| 57/60 [21:56<00:40, 13.35s/it]Evaluating (bs=1):  97%|█████████▋| 58/60 [22:05<00:24, 12.23s/it]Evaluating (bs=1):  98%|█████████▊| 59/60 [22:17<00:12, 12.08s/it]Evaluating (bs=1): 100%|██████████| 60/60 [22:22<00:00, 10.01s/it]Evaluating (bs=1): 100%|██████████| 60/60 [22:22<00:00, 22.38s/it]
+Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/eagle3-temperature-0.jsonl
+
+EAGLE3 evaluation complete!
+Results saved to: results/Qwen2.5-VL-7B/mmspec_testmini/eagle3-temperature-0.jsonl
+
+real	24m35.278s
+user	22m31.112s
+sys	0m17.081s
