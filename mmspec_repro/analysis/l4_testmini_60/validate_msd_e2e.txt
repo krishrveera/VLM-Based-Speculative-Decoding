@@ -1,0 +1,16 @@
+[PASS] 1 same samples: 60 shared; only-orig 0, only-e2e 0
+[PASS] 2 same outputs: text identical 60/60, token counts identical 60/60
+[PASS] 3 same decode timing: median e2e/orig wall_time = 0.999 over 69 turns
+[PASS] 4 embed-prep time logged: 69 turns, min 0.1446s, median 0.8617s
+[FAIL] 5 acceptance identity: replayed 69 turns, max |cumulative(ours) − original running avg| = 2.53e+00. If this msd_e2e run crashed and was resumed, the original counter restarted mid-run: delete its file and run it once, uninterrupted, before judging this check.
+[FAIL] 6 overall MAT agrees: exact overall MAT (e2e) 0.005 vs last running avg (orig) 2.442
+
+Embedding-prep time (incl. vision encoder) vs decode time (msd_e2e):
+  chart understanding        embed-prep    8.98s  decode    34.21s  share of e2e  20.8%
+  complex reasoning pro      embed-prep    3.95s  decode    81.86s  share of e2e   4.6%
+  general vqa                embed-prep    2.26s  decode    12.03s  share of e2e  15.8%
+  image captioning           embed-prep    2.30s  decode    93.59s  share of e2e   2.4%
+  multi-turn conversation    embed-prep   28.63s  decode   167.81s  share of e2e  14.6%
+  text vqa                   embed-prep   13.45s  decode    22.97s  share of e2e  36.9%
+
+4 pass, 0 warn, 2 fail

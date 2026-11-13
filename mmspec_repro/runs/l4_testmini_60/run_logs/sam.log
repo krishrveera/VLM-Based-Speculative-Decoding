@@ -1,0 +1,29 @@
+==========================================
+SAM Evaluation on MMSpec (testmini)
+==========================================
+Base Model: Qwen/Qwen2.5-VL-7B-Instruct
+Spec Model: 
+Data Folder: dataset/MMSpec/testmini
+SAM params: total_token=30, depth=3, top_k=8, threshold=1.0
+Max New Tokens: 1024
+Output: results/Qwen2.5-VL-7B/mmspec_testmini/sam-temperature-0.jsonl
+
+Output to results/Qwen2.5-VL-7B/mmspec_testmini/sam-temperature-0.jsonl
+Method: SAM
+SAM params: total_token=30, depth=3, top_k=8
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:20<01:21, 20.48s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:40<01:01, 20.34s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:55<00:35, 17.70s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:14<00:18, 18.16s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:19<00:00, 13.65s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:19<00:00, 15.96s/it]
+Check model training state: False
+CUDA VISIBLE DEVICES: 0
+Loaded 60 samples
+Warming up...
+Warmup done
+Skipping 0 already-evaluated samples
+Evaluating:   0%|          | 0/60 [00:00<?, ?it/s]Evaluating:   2%|▏         | 1/60 [00:03<03:23,  3.45s/it]Evaluating:   3%|▎         | 2/60 [00:09<05:05,  5.27s/it]Evaluating:   5%|▌         | 3/60 [00:17<06:05,  6.42s/it]Evaluating:   7%|▋         | 4/60 [00:21<05:08,  5.50s/it]Evaluating:   8%|▊         | 5/60 [00:25<04:25,  4.83s/it]Evaluating:  10%|█         | 6/60 [00:31<04:34,  5.09s/it]Evaluating:  12%|█▏        | 7/60 [00:36<04:43,  5.35s/it]Evaluating:  13%|█▎        | 8/60 [00:42<04:42,  5.44s/it]Evaluating:  15%|█▌        | 9/60 [00:48<04:48,  5.66s/it]Evaluating:  17%|█▋        | 10/60 [00:52<04:13,  5.06s/it]Evaluating:  18%|█▊        | 11/60 [00:59<04:36,  5.64s/it]Evaluating:  20%|██        | 12/60 [01:04<04:23,  5.48s/it]Evaluating:  22%|██▏       | 13/60 [01:08<03:54,  5.00s/it]Evaluating:  23%|██▎       | 14/60 [01:11<03:19,  4.35s/it]Evaluating:  25%|██▌       | 15/60 [01:14<03:05,  4.12s/it]Evaluating:  27%|██▋       | 16/60 [01:29<05:26,  7.41s/it]Evaluating:  28%|██▊       | 17/60 [01:32<04:15,  5.93s/it]Evaluating:  30%|███       | 18/60 [01:36<03:43,  5.33s/it]Evaluating:  32%|███▏      | 19/60 [01:42<03:54,  5.71s/it]Evaluating:  33%|███▎      | 20/60 [01:46<03:18,  4.95s/it]Evaluating:  35%|███▌      | 21/60 [01:48<02:42,  4.17s/it]Evaluating:  37%|███▋      | 22/60 [01:51<02:23,  3.76s/it]Evaluating:  38%|███▊      | 23/60 [01:57<02:45,  4.47s/it]Evaluating:  40%|████      | 24/60 [02:00<02:22,  3.96s/it]Evaluating:  42%|████▏     | 25/60 [02:02<02:06,  3.61s/it]Evaluating:  43%|████▎     | 26/60 [02:05<01:53,  3.33s/it]Evaluating:  45%|████▌     | 27/60 [02:08<01:44,  3.16s/it]Evaluating:  47%|████▋     | 28/60 [02:11<01:39,  3.12s/it]Evaluating:  48%|████▊     | 29/60 [02:14<01:35,  3.09s/it]Evaluating:  50%|█████     | 30/60 [02:16<01:27,  2.90s/it]Evaluating:  52%|█████▏    | 31/60 [02:27<02:34,  5.33s/it]Evaluating:  53%|█████▎    | 32/60 [02:35<02:47,  5.98s/it]Evaluating:  55%|█████▌    | 33/60 [02:41<02:42,  6.02s/it]Evaluating:  57%|█████▋    | 34/60 [02:54<03:34,  8.25s/it]Evaluating:  58%|█████▊    | 35/60 [03:00<03:04,  7.39s/it]Evaluating:  60%|██████    | 36/60 [03:11<03:26,  8.61s/it]Evaluating:  62%|██████▏   | 37/60 [03:19<03:09,  8.25s/it]Evaluating:  63%|██████▎   | 38/60 [03:30<03:22,  9.20s/it]Evaluating:  65%|██████▌   | 39/60 [03:40<03:18,  9.44s/it]Evaluating:  67%|██████▋   | 40/60 [03:51<03:14,  9.74s/it]Evaluating:  68%|██████▊   | 41/60 [04:14<04:24, 13.90s/it]Evaluating:  70%|███████   | 42/60 [04:57<06:47, 22.66s/it]Evaluating:  72%|███████▏  | 43/60 [05:29<07:12, 25.45s/it]Evaluating:  73%|███████▎  | 44/60 [06:10<07:58, 29.91s/it]Evaluating:  75%|███████▌  | 45/60 [06:36<07:14, 28.94s/it]Evaluating:  77%|███████▋  | 46/60 [06:42<05:08, 22.06s/it]Evaluating:  78%|███████▊  | 47/60 [07:04<04:45, 21.96s/it]Evaluating:  80%|████████  | 48/60 [07:13<03:35, 17.96s/it]Evaluating:  82%|████████▏ | 49/60 [07:57<04:46, 26.03s/it]Evaluating:  83%|████████▎ | 50/60 [08:09<03:38, 21.82s/it]Evaluating:  85%|████████▌ | 51/60 [08:14<02:29, 16.60s/it]Evaluating:  87%|████████▋ | 52/60 [08:20<01:47, 13.38s/it]Evaluating:  88%|████████▊ | 53/60 [08:25<01:15, 10.83s/it]Evaluating:  90%|█████████ | 54/60 [08:31<00:57,  9.60s/it]Evaluating:  92%|█████████▏| 55/60 [08:35<00:39,  7.94s/it]Evaluating:  93%|█████████▎| 56/60 [08:41<00:28,  7.14s/it]Evaluating:  95%|█████████▌| 57/60 [08:47<00:20,  6.83s/it]Evaluating:  97%|█████████▋| 58/60 [08:53<00:13,  6.57s/it]Evaluating:  98%|█████████▊| 59/60 [09:00<00:06,  6.66s/it]Evaluating: 100%|██████████| 60/60 [09:04<00:00,  5.96s/it]Evaluating: 100%|██████████| 60/60 [09:04<00:00,  9.07s/it]
+Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/sam-temperature-0.jsonl
+
+SAM evaluation complete!
+Results saved to: results/Qwen2.5-VL-7B/mmspec_testmini/sam-temperature-0.jsonl
+
+real	10m51.300s
+user	8m58.876s
+sys	0m11.712s

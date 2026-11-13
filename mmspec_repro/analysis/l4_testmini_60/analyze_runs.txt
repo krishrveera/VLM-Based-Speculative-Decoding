@@ -1,0 +1,35 @@
+== answer problems (of 60); greedy baseline for reference ==
+method         mid-answer corruption    junk after finished answer
+eagle                       0 ( 0.0%)                    0 ( 0.0%)
+vispec                      0 ( 0.0%)                    0 ( 0.0%)
+eagle2                      0 ( 0.0%)                    1 ( 1.7%)
+msd_e2e                     8 (13.3%)                    0 ( 0.0%)
+pld                         1 ( 1.7%)                    0 ( 0.0%)
+lookahead                   0 ( 0.0%)                    0 ( 0.0%)
+sam                        36 (60.0%)                    0 ( 0.0%)
+recycling                  34 (56.7%)                    0 ( 0.0%)
+eagle3                      0 ( 0.0%)                    0 ( 0.0%)
+baseline                    0 ( 0.0%)                    0 ( 0.0%)
+
+== pooled tok/s speedup vs baseline_greedy, 95% bootstrap CI (2000 resamples of questions) ==
+eagle        1.58x  (1.47-1.67)
+vispec       1.57x  (1.45-1.65)
+eagle2       1.54x  (1.44-1.62)
+msd_e2e      1.56x  (1.45-1.67)
+pld          1.01x  (0.95-1.06)
+lookahead    0.99x  (0.89-1.09)
+sam          0.95x  (0.89-1.01)
+recycling    0.93x  (0.89-0.95)
+eagle3       0.67x  (0.65-0.69)
+baseline     1.01x  (1.01-1.01)
+msd_e2e*     1.36x  (1.24-1.48)
+   msd_e2e* = MSD with vision-encoder time included in its timer
+
+== paired differences (same resampled questions for both): A minus B ==
+eagle     vs vispec   +0.010  (-0.053 to +0.069)  cannot tell apart
+eagle     vs eagle2   +0.039  (+0.010 to +0.069)  A faster
+vispec    vs eagle2   +0.028  (-0.019 to +0.079)  cannot tell apart
+msd_e2e   vs eagle    -0.024  (-0.153 to +0.123)  cannot tell apart
+msd_e2e   vs vispec   -0.014  (-0.140 to +0.132)  cannot tell apart
+msd_e2e*  vs eagle    -0.221  (-0.332 to -0.092)  B faster
+msd_e2e*  vs vispec   -0.210  (-0.327 to -0.073)  B faster

@@ -1,0 +1,13 @@
+method            doubled-word answers  junk-token answers     any
+baseline_greedy               0/600              2/600    2/600
+baseline                      0/600              3/600    3/600
+eagle                         1/600             51/600   52/600
+eagle2                        0/600             39/600   39/600
+eagle3                        1/600              2/600    3/600
+vispec                        0/600             51/600   51/600
+msd_e2e                      76/600             23/600   84/600
+medusa                        0/600             54/600   54/600
+pld                           1/600              2/600    3/600
+lookahead                     0/600              2/600    2/600
+recycling                   366/600             27/600  375/600
+sam                         292/600            158/600  334/600

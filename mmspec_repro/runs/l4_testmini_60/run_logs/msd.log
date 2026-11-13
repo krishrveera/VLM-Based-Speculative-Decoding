@@ -1,0 +1,41 @@
+==========================================
+MSD Evaluation on MMSpec (testmini)
+==========================================
+Base Model: Qwen/Qwen2.5-VL-7B-Instruct
+MSD Model: Cloudriver/MSD-Qwen2.5-VL-7B-Instruct
+Data Folder: dataset/MMSpec/testmini
+MSD params: depth=5, top_k=10, total_token=59
+Attention implementation: eager
+Max New Tokens: 1024
+
+>>> Running MSD Speculative Decoding...
+Output: results/Qwen2.5-VL-7B/mmspec_testmini/msd-temperature-0.jsonl
+Output to results/Qwen2.5-VL-7B/mmspec_testmini/msd-temperature-0.jsonl
+Loading MSD model from Cloudriver/MSD-Qwen2.5-VL-7B-Instruct...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.50s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:11<00:19,  6.64s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:23<00:18,  9.19s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:25<00:06,  6.04s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  3.98s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.10s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Check model training state: False
+CUDA VISIBLE DEVICES: 0
+Attention implementation: eager
+Loaded 60 samples
+Warming up...
+Warmup done
+Skipping 0 already-evaluated samples
+Evaluating (bs=1):   0%|          | 0/60 [00:00<?, ?it/s]Evaluating (bs=1):   2%|▏         | 1/60 [00:03<03:34,  3.63s/it]Evaluating (bs=1):   3%|▎         | 2/60 [00:09<04:33,  4.72s/it]Evaluating (bs=1):   5%|▌         | 3/60 [00:15<05:24,  5.70s/it]Evaluating (bs=1):   7%|▋         | 4/60 [00:28<07:59,  8.56s/it]Evaluating (bs=1):   8%|▊         | 5/60 [00:32<06:17,  6.86s/it]Evaluating (bs=1):  10%|█         | 6/60 [00:38<05:43,  6.36s/it]Evaluating (bs=1):  12%|█▏        | 7/60 [00:42<04:59,  5.65s/it]Evaluating (bs=1):  13%|█▎        | 8/60 [00:46<04:31,  5.23s/it]Evaluating (bs=1):  15%|█▌        | 9/60 [00:52<04:32,  5.35s/it]Evaluating (bs=1):  17%|█▋        | 10/60 [00:57<04:17,  5.16s/it]Evaluating (bs=1):  18%|█▊        | 11/60 [01:03<04:36,  5.64s/it]Evaluating (bs=1):  20%|██        | 12/60 [01:10<04:50,  6.05s/it]Evaluating (bs=1):  22%|██▏       | 13/60 [01:26<06:57,  8.89s/it]Evaluating (bs=1):  23%|██▎       | 14/60 [01:38<07:33,  9.86s/it]Evaluating (bs=1):  25%|██▌       | 15/60 [01:43<06:17,  8.38s/it]Evaluating (bs=1):  27%|██▋       | 16/60 [01:49<05:43,  7.81s/it]Evaluating (bs=1):  28%|██▊       | 17/60 [02:16<09:44, 13.60s/it]Evaluating (bs=1):  30%|███       | 18/60 [02:28<09:04, 12.96s/it]Evaluating (bs=1):  32%|███▏      | 19/60 [02:32<07:05, 10.37s/it]Evaluating (bs=1):  33%|███▎      | 20/60 [02:36<05:38,  8.46s/it]Evaluating (bs=1):  35%|███▌      | 21/60 [02:38<04:16,  6.57s/it]Evaluating (bs=1):  37%|███▋      | 22/60 [02:43<03:47,  6.00s/it]Evaluating (bs=1):  38%|███▊      | 23/60 [02:46<03:08,  5.10s/it]Evaluating (bs=1):  40%|████      | 24/60 [02:49<02:41,  4.48s/it]Evaluating (bs=1):  42%|████▏     | 25/60 [02:51<02:16,  3.89s/it]Evaluating (bs=1):  43%|████▎     | 26/60 [02:54<01:57,  3.46s/it]Evaluating (bs=1):  45%|████▌     | 27/60 [02:56<01:43,  3.14s/it]Evaluating (bs=1):  47%|████▋     | 28/60 [02:59<01:33,  2.91s/it]Evaluating (bs=1):  48%|████▊     | 29/60 [03:02<01:33,  3.00s/it]Evaluating (bs=1):  50%|█████     | 30/60 [03:05<01:27,  2.91s/it]Evaluating (bs=1):  52%|█████▏    | 31/60 [03:14<02:17,  4.73s/it]Evaluating (bs=1):  53%|█████▎    | 32/60 [03:22<02:47,  5.99s/it]Evaluating (bs=1):  55%|█████▌    | 33/60 [03:31<03:00,  6.70s/it]Evaluating (bs=1):  57%|█████▋    | 34/60 [03:42<03:25,  7.90s/it]Evaluating (bs=1):  58%|█████▊    | 35/60 [04:16<06:35, 15.81s/it]Evaluating (bs=1):  60%|██████    | 36/60 [04:25<05:28, 13.68s/it]Evaluating (bs=1):  62%|██████▏   | 37/60 [04:33<04:38, 12.09s/it]Evaluating (bs=1):  63%|██████▎   | 38/60 [04:40<03:56, 10.73s/it]Evaluating (bs=1):  65%|██████▌   | 39/60 [04:48<03:27,  9.89s/it]Evaluating (bs=1):  67%|██████▋   | 40/60 [04:55<02:57,  8.89s/it]Evaluating (bs=1):  68%|██████▊   | 41/60 [05:15<03:54, 12.35s/it]Evaluating (bs=1):  70%|███████   | 42/60 [05:34<04:17, 14.28s/it]Evaluating (bs=1):  72%|███████▏  | 43/60 [06:05<05:24, 19.10s/it]Evaluating (bs=1):  73%|███████▎  | 44/60 [06:37<06:07, 22.98s/it]Evaluating (bs=1):  75%|███████▌  | 45/60 [07:14<06:48, 27.22s/it]Evaluating (bs=1):  77%|███████▋  | 46/60 [07:26<05:19, 22.85s/it]Evaluating (bs=1):  78%|███████▊  | 47/60 [07:39<04:18, 19.87s/it]Evaluating (bs=1):  80%|████████  | 48/60 [07:55<03:42, 18.52s/it]Evaluating (bs=1):  82%|████████▏ | 49/60 [08:23<03:55, 21.45s/it]Evaluating (bs=1):  83%|████████▎ | 50/60 [08:40<03:22, 20.28s/it]Evaluating (bs=1):  85%|████████▌ | 51/60 [08:44<02:18, 15.34s/it]Evaluating (bs=1):  87%|████████▋ | 52/60 [08:49<01:37, 12.18s/it]Evaluating (bs=1):  88%|████████▊ | 53/60 [08:54<01:09,  9.88s/it]Evaluating (bs=1):  90%|█████████ | 54/60 [08:58<00:49,  8.19s/it]Evaluating (bs=1):  92%|█████████▏| 55/60 [09:03<00:36,  7.24s/it]Evaluating (bs=1):  93%|█████████▎| 56/60 [09:09<00:27,  6.90s/it]Evaluating (bs=1):  95%|█████████▌| 57/60 [09:15<00:20,  6.72s/it]Evaluating (bs=1):  97%|█████████▋| 58/60 [09:22<00:13,  6.66s/it]Evaluating (bs=1):  98%|█████████▊| 59/60 [09:28<00:06,  6.41s/it]Evaluating (bs=1): 100%|██████████| 60/60 [09:31<00:00,  5.60s/it]Evaluating (bs=1): 100%|██████████| 60/60 [09:31<00:00,  9.53s/it]
+
+==================================================
+Evaluation Summary
+==================================================
+Total samples: 60
+Total time: 412.31s
+Total tokens: 9661
+Tokens/s: 23.43
+Average acceptance length: 2.44
+Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/msd-temperature-0.jsonl
+
+Done. Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/msd-temperature-0.jsonl
+
+real	10m43.684s
+user	9m30.372s
+sys	0m12.309s

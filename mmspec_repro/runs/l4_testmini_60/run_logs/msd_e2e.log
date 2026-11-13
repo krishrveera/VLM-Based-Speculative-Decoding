@@ -1,0 +1,40 @@
+==========================================
+MSD Evaluation on MMSpec (testmini)
+==========================================
+Base Model: Qwen/Qwen2.5-VL-7B-Instruct
+MSD Model: Cloudriver/MSD-Qwen2.5-VL-7B-Instruct
+Data Folder: dataset/MMSpec/testmini
+MSD params: depth=5, top_k=10, total_token=59
+Attention implementation: eager
+Max New Tokens: 1024
+
+>>> Running MSD Speculative Decoding...
+Output: results/Qwen2.5-VL-7B/mmspec_testmini/msd_e2e-temperature-0.jsonl
+Output to results/Qwen2.5-VL-7B/mmspec_testmini/msd_e2e-temperature-0.jsonl
+Loading MSD model from Cloudriver/MSD-Qwen2.5-VL-7B-Instruct...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:20<01:21, 20.41s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:21<00:27,  9.23s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:30<00:17,  8.82s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:50<00:13, 13.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:55<00:00, 10.55s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:55<00:00, 11.20s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Check model training state: False
+CUDA VISIBLE DEVICES: 0
+Attention implementation: eager
+Loaded 60 samples
+Warming up...
+Warmup done
+Skipping 0 already-evaluated samples
+Evaluating (bs=1):   0%|          | 0/60 [00:00<?, ?it/s]Evaluating (bs=1):   2%|▏         | 1/60 [00:03<03:37,  3.68s/it]Evaluating (bs=1):   3%|▎         | 2/60 [00:09<04:36,  4.76s/it]Evaluating (bs=1):   5%|▌         | 3/60 [00:16<05:28,  5.76s/it]Evaluating (bs=1):   7%|▋         | 4/60 [00:29<08:06,  8.68s/it]Evaluating (bs=1):   8%|▊         | 5/60 [00:33<06:22,  6.95s/it]Evaluating (bs=1):  10%|█         | 6/60 [00:38<05:47,  6.43s/it]Evaluating (bs=1):  12%|█▏        | 7/60 [00:42<05:03,  5.72s/it]Evaluating (bs=1):  13%|█▎        | 8/60 [00:47<04:35,  5.30s/it]Evaluating (bs=1):  15%|█▌        | 9/60 [00:52<04:36,  5.42s/it]Evaluating (bs=1):  17%|█▋        | 10/60 [00:57<04:21,  5.22s/it]Evaluating (bs=1):  18%|█▊        | 11/60 [01:04<04:40,  5.72s/it]Evaluating (bs=1):  20%|██        | 12/60 [01:11<04:54,  6.14s/it]Evaluating (bs=1):  22%|██▏       | 13/60 [01:27<07:02,  8.98s/it]Evaluating (bs=1):  23%|██▎       | 14/60 [01:39<07:37,  9.95s/it]Evaluating (bs=1):  25%|██▌       | 15/60 [01:44<06:19,  8.44s/it]Evaluating (bs=1):  27%|██▋       | 16/60 [01:50<05:45,  7.86s/it]Evaluating (bs=1):  28%|██▊       | 17/60 [02:17<09:47, 13.65s/it]Evaluating (bs=1):  30%|███       | 18/60 [02:29<09:05, 12.98s/it]Evaluating (bs=1):  32%|███▏      | 19/60 [02:33<07:04, 10.35s/it]Evaluating (bs=1):  33%|███▎      | 20/60 [02:37<05:37,  8.43s/it]Evaluating (bs=1):  35%|███▌      | 21/60 [02:39<04:14,  6.53s/it]Evaluating (bs=1):  37%|███▋      | 22/60 [02:44<03:45,  5.95s/it]Evaluating (bs=1):  38%|███▊      | 23/60 [02:47<03:06,  5.04s/it]Evaluating (bs=1):  40%|████      | 24/60 [02:50<02:39,  4.43s/it]Evaluating (bs=1):  42%|████▏     | 25/60 [02:52<02:14,  3.84s/it]Evaluating (bs=1):  43%|████▎     | 26/60 [02:55<01:55,  3.40s/it]Evaluating (bs=1):  45%|████▌     | 27/60 [02:57<01:41,  3.08s/it]Evaluating (bs=1):  47%|████▋     | 28/60 [02:59<01:31,  2.86s/it]Evaluating (bs=1):  48%|████▊     | 29/60 [03:02<01:31,  2.95s/it]Evaluating (bs=1):  50%|█████     | 30/60 [03:05<01:25,  2.84s/it]Evaluating (bs=1):  52%|█████▏    | 31/60 [03:14<02:15,  4.66s/it]Evaluating (bs=1):  53%|█████▎    | 32/60 [03:23<02:45,  5.92s/it]Evaluating (bs=1):  55%|█████▌    | 33/60 [03:31<02:58,  6.61s/it]Evaluating (bs=1):  57%|█████▋    | 34/60 [03:41<03:22,  7.79s/it]Evaluating (bs=1):  58%|█████▊    | 35/60 [04:16<06:32, 15.71s/it]Evaluating (bs=1):  60%|██████    | 36/60 [04:24<05:26, 13.58s/it]Evaluating (bs=1):  62%|██████▏   | 37/60 [04:33<04:36, 12.03s/it]Evaluating (bs=1):  63%|██████▎   | 38/60 [04:40<03:54, 10.66s/it]Evaluating (bs=1):  65%|██████▌   | 39/60 [04:48<03:26,  9.81s/it]Evaluating (bs=1):  67%|██████▋   | 40/60 [04:55<02:56,  8.82s/it]Evaluating (bs=1):  68%|██████▊   | 41/60 [05:15<03:52, 12.26s/it]Evaluating (bs=1):  70%|███████   | 42/60 [05:33<04:13, 14.07s/it]Evaluating (bs=1):  72%|███████▏  | 43/60 [06:03<05:20, 18.82s/it]Evaluating (bs=1):  73%|███████▎  | 44/60 [06:35<06:03, 22.74s/it]Evaluating (bs=1):  75%|███████▌  | 45/60 [07:12<06:44, 26.95s/it]Evaluating (bs=1):  77%|███████▋  | 46/60 [07:24<05:16, 22.63s/it]Evaluating (bs=1):  78%|███████▊  | 47/60 [07:37<04:15, 19.65s/it]Evaluating (bs=1):  80%|████████  | 48/60 [07:52<03:39, 18.30s/it]Evaluating (bs=1):  82%|████████▏ | 49/60 [08:20<03:53, 21.27s/it]Evaluating (bs=1):  83%|████████▎ | 50/60 [08:38<03:21, 20.12s/it]Evaluating (bs=1):  85%|████████▌ | 51/60 [08:41<02:16, 15.21s/it]Evaluating (bs=1):  87%|████████▋ | 52/60 [08:46<01:36, 12.06s/it]Evaluating (bs=1):  88%|████████▊ | 53/60 [08:51<01:08,  9.77s/it]Evaluating (bs=1):  90%|█████████ | 54/60 [08:55<00:48,  8.09s/it]Evaluating (bs=1):  92%|█████████▏| 55/60 [09:00<00:35,  7.16s/it]Evaluating (bs=1):  93%|█████████▎| 56/60 [09:06<00:27,  6.83s/it]Evaluating (bs=1):  95%|█████████▌| 57/60 [09:12<00:19,  6.65s/it]Evaluating (bs=1):  97%|█████████▋| 58/60 [09:18<00:13,  6.59s/it]Evaluating (bs=1):  98%|█████████▊| 59/60 [09:24<00:06,  6.35s/it]Evaluating (bs=1): 100%|██████████| 60/60 [09:28<00:00,  5.55s/it]Evaluating (bs=1): 100%|██████████| 60/60 [09:28<00:00,  9.47s/it]
+
+==================================================
+Evaluation Summary
+==================================================
+Total samples: 60
+Total time: 412.48s
+Total tokens: 9661
+Tokens/s: 23.42
+Average acceptance length: 2.44
+Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/msd_e2e-temperature-0.jsonl
+
+Done. Results saved to results/Qwen2.5-VL-7B/mmspec_testmini/msd_e2e-temperature-0.jsonl
+
+real	11m7.884s
+user	9m31.355s
+sys	0m13.917s
